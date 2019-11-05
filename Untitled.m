@@ -1,0 +1,10 @@
+voice=audioread('test1.wav');
+x=voice;         %voice variable to x variable%
+x=x';            %Convert two coloum to row%
+x=x(1,:);        %Convert two row and many coloum to one row & many coloum%
+x=x';            %convert one row & many coloum to one coloum & many row%
+y1=audioread('aalif.wav');
+y1=y1';
+y1=y1(1,:);
+y1=y1';
+z1=xcorr(x,x)       %convert one row and many coloumn in one coloumn many row 
